@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1658144390 "/Users/mrrobot/Documents/GitHub/curriculum_vitae/mai-joel_maximilian-curriculum_vitae.tex" "/Users/mrrobot/Documents/GitHub/curriculum_vitae/mai-joel_maximilian-curriculum_vitae.pdf" "mai-joel_maximilian-curriculum_vitae" 1658144392
-  "/Users/mrrobot/Documents/GitHub/curriculum_vitae/mai-joel_maximilian-curriculum_vitae.aux" 1658144392 763 cfa54cf52c38040882586d83f7a54e22 ""
-  "/Users/mrrobot/Documents/GitHub/curriculum_vitae/mai-joel_maximilian-curriculum_vitae.tex" 1658144389 17074 d69ca4eb3a2a7833ec170cfcb9111bc7 ""
+["pdflatex"] 1658837431 "/Users/mrrobot/Documents/GitHub/curriculum_vitae/mai-joel_maximilian-curriculum_vitae.tex" "/Users/mrrobot/Documents/GitHub/curriculum_vitae/mai-joel_maximilian-curriculum_vitae.pdf" "mai-joel_maximilian-curriculum_vitae" 1658837433
+  "/Users/mrrobot/Documents/GitHub/curriculum_vitae/mai-joel_maximilian-curriculum_vitae.aux" 1658837433 763 cfa54cf52c38040882586d83f7a54e22 ""
+  "/Users/mrrobot/Documents/GitHub/curriculum_vitae/mai-joel_maximilian-curriculum_vitae.tex" 1658837431 19893 d2efbcb2ae6e625d5f4b646abcdf2d9e ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc" 1463430686 2437 443c81fb50993bacedc5f9a206c322b0 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -191,13 +191,14 @@
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1617009776 2432453 ada3cfbbe3a09349d61b469381677a55 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
   "assets/images/profile_picture.jpeg" 1655048021 33283 ee6f7d4b81a14fc2099dc71398b6235f ""
-  "mai-joel_maximilian-curriculum_vitae.aux" 1658144392 763 cfa54cf52c38040882586d83f7a54e22 "pdflatex"
-  "mai-joel_maximilian-curriculum_vitae.out" 1658144391 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "mai-joel_maximilian-curriculum_vitae.tex" 1658144389 17074 d69ca4eb3a2a7833ec170cfcb9111bc7 ""
+  "assets/images/signature.png" 1658144278 20447 4ca64f5bece16529a506c7a5e8e3158e ""
+  "mai-joel_maximilian-curriculum_vitae.aux" 1658837433 763 cfa54cf52c38040882586d83f7a54e22 "pdflatex"
+  "mai-joel_maximilian-curriculum_vitae.out" 1658837432 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "mai-joel_maximilian-curriculum_vitae.tex" 1658837431 19893 d2efbcb2ae6e625d5f4b646abcdf2d9e ""
   (generated)
-  "mai-joel_maximilian-curriculum_vitae.out"
-  "/Users/mrrobot/Documents/GitHub/curriculum_vitae/mai-joel_maximilian-curriculum_vitae.log"
-  "mai-joel_maximilian-curriculum_vitae.pdf"
   "mai-joel_maximilian-curriculum_vitae.aux"
-  "mai-joel_maximilian-curriculum_vitae.log"
   "/Users/mrrobot/Documents/GitHub/curriculum_vitae/mai-joel_maximilian-curriculum_vitae.pdf"
+  "mai-joel_maximilian-curriculum_vitae.pdf"
+  "/Users/mrrobot/Documents/GitHub/curriculum_vitae/mai-joel_maximilian-curriculum_vitae.log"
+  "mai-joel_maximilian-curriculum_vitae.log"
+  "mai-joel_maximilian-curriculum_vitae.out"
