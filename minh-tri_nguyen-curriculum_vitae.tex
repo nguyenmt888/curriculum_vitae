@@ -1,0 +1,555 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2019 Jan Küster
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+
+%============================================================================%
+%
+%	DOCUMENT DEFINITION
+%
+%============================================================================%
+
+%we use article class because we want to fully customize the page and don't use a cv template
+\documentclass[10pt,A4]{article}	
+
+
+%----------------------------------------------------------------------------------------
+%	ENCODING
+%----------------------------------------------------------------------------------------
+
+% we use utf8 since we want to build from any machine
+\usepackage[utf8]{inputenc}		
+
+%----------------------------------------------------------------------------------------
+%	LOGIC
+%----------------------------------------------------------------------------------------
+
+% provides \isempty test
+\usepackage{xstring, xifthen}
+
+%----------------------------------------------------------------------------------------
+%	FONT BASICS
+%----------------------------------------------------------------------------------------
+
+% some tex-live fonts - choose your own
+
+%\usepackage[defaultsans]{droidsans}
+%\usepackage[default]{comfortaa}
+%\usepackage{cmbright}
+\usepackage[default]{raleway}
+%\usepackage{fetamont}
+%\usepackage[default]{gillius}
+%\usepackage[light,math]{iwona}
+%\usepackage[thin]{roboto} 
+
+% set font default
+\renewcommand*\familydefault{\sfdefault} 	
+\usepackage[T1]{fontenc}
+
+% more font size definitions
+\usepackage{moresize}
+
+% language
+\usepackage[german]{babel}
+
+% text alignment
+\usepackage{ragged2e}
+
+%----------------------------------------------------------------------------------------
+%	FONT AWESOME ICONS
+%---------------------------------------------------------------------------------------- 
+
+% include the fontawesome icon set
+\usepackage{fontawesome}
+
+% use to vertically center content
+% credits to: http://tex.stackexchange.com/questions/7219/how-to-vertically-center-two-images-next-to-each-other
+\newcommand{\vcenteredinclude}[1]{\begingroup
+\setbox0=\hbox{\includegraphics{#1}}%
+\parbox{\wd0}{\box0}\endgroup}
+
+% use to vertically center content
+% credits to: http://tex.stackexchange.com/questions/7219/how-to-vertically-center-two-images-next-to-each-other
+\newcommand*{\vcenteredhbox}[1]{\begingroup
+\setbox0=\hbox{#1}\parbox{\wd0}{\box0}\endgroup}
+
+% icon shortcut
+\newcommand{\icon}[3] { 							
+	\makebox(#2, #2){\textcolor{maincol}{\csname fa#1\endcsname}}
+}	
+
+% icon with text shortcut
+\newcommand{\icontext}[4]{ 						
+	\vcenteredhbox{\icon{#1}{#2}{#3}}  \hspace{2pt}  \parbox{0.9\mpwidth}{\textcolor{#4}{#3}}
+}
+
+% icon with website url
+\newcommand{\iconhref}[5]{ 						
+    \vcenteredhbox{\icon{#1}{#2}{#5}}  \hspace{2pt} \href{#4}{\textcolor{#5}{#3}}
+}
+
+% icon with email link
+\newcommand{\iconemail}[5]{ 						
+    \vcenteredhbox{\icon{#1}{#2}{#5}}  \hspace{2pt} \href{mailto:#4}{\textcolor{#5}{#3}}
+}
+
+%----------------------------------------------------------------------------------------
+%	PAGE LAYOUT  DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+% page outer frames (debug-only)
+% \usepackage{showframe}		
+
+% we use paracol to display breakable two columns
+\usepackage{paracol}
+
+% define page styles using geometry
+\usepackage[a4paper]{geometry}
+
+% remove all possible margins
+\geometry{top=1cm, bottom=1cm, left=1cm, right=1cm}
+
+\usepackage{fancyhdr}
+\pagestyle{empty}
+
+% space between header and content
+% \setlength{\headheight}{0pt}
+
+% indentation is zero
+\setlength{\parindent}{0mm}
+
+%----------------------------------------------------------------------------------------
+%	TABLE /ARRAY DEFINITIONS
+%---------------------------------------------------------------------------------------- 
+
+% extended aligning of tabular cells
+\usepackage{array}
+
+% custom column right-align with fixed width
+% use like p{size} but via x{size}
+\newcolumntype{x}[1]{%
+>{\raggedleft\hspace{0pt}}p{#1}}%
+
+
+%----------------------------------------------------------------------------------------
+%	GRAPHICS DEFINITIONS
+%---------------------------------------------------------------------------------------- 
+
+%for header image
+\usepackage{graphicx}
+
+% use this for floating figures
+% \usepackage{wrapfig}
+% \usepackage{float}
+% \floatstyle{boxed} 
+% \restylefloat{figure}
+
+%for drawing graphics		
+\usepackage{tikz}				
+\usetikzlibrary{shapes, backgrounds,mindmap, trees}
+
+\newsavebox{\picbox}
+\newcommand{\cutpic}[3]{
+  \savebox{\picbox}{\includegraphics[width=#2]{#3}}
+  \tikz\node [draw, rounded corners=#1, line width=4pt,
+    color=white, minimum width=\wd\picbox,
+    minimum height=\ht\picbox, path picture={
+      \node at (path picture bounding box.center) {
+        \usebox{\picbox}};
+    }] {};}
+
+%----------------------------------------------------------------------------------------
+%	Color DEFINITIONS
+%---------------------------------------------------------------------------------------- 
+\usepackage{transparent}
+\usepackage{color}
+
+% primary color (big background, date)
+\definecolor{maincol}{RGB}{ 77, 75, 70 } 
+
+% accent color, secondary
+% \definecolor{accentcol}{RGB}{ 250, 150, 10 }
+
+% dark color (big headline)
+\definecolor{darkcol}{RGB}{ 179, 150, 35 }
+
+% light color (vetical line and background of load beam)
+\definecolor{lightcol}{RGB}{ 224, 224, 224 }
+
+
+% Package for links, must be the last package used
+\usepackage[hidelinks]{hyperref}
+
+% returns minipage width minus two times \fboxsep
+% to keep padding included in width calculations
+% can also be used for other boxes / environments
+\newcommand{\mpwidth}{\linewidth-\fboxsep-\fboxsep}
+	
+
+
+%============================================================================%
+%
+%	CV COMMANDS
+%
+%============================================================================%
+
+%----------------------------------------------------------------------------------------
+%	 CV LIST
+%----------------------------------------------------------------------------------------
+
+% renders a standard latex list but abstracts away the environment definition (begin/end)
+\newcommand{\cvlist}[1] {
+	\begin{itemize}{#1}\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	 CV TEXT
+%----------------------------------------------------------------------------------------
+
+% base class to wrap any text based stuff here. Renders like a paragraph.
+% Allows complex commands to be passed, too.
+% param 1: *any
+\newcommand{\cvtext}[1] {
+	\begin{tabular*}{1\mpwidth}{p{0.98\mpwidth}}
+		\parbox{1\mpwidth}{#1}
+	\end{tabular*}
+}
+
+%----------------------------------------------------------------------------------------
+%	CV SECTION
+%----------------------------------------------------------------------------------------
+
+% Renders a a CV section headline with a nice underline in main color.
+% param 1: section title
+\newcommand{\cvsection}[1] {
+	\vspace{14pt}
+	\cvtext{
+		\textbf{\LARGE{\textcolor{darkcol}{\uppercase{#1}}}}\\[-4pt]
+		\textcolor{maincol}{ \rule{0.1\textwidth}{2pt} } \\
+	}
+}
+
+%----------------------------------------------------------------------------------------
+%	META SKILL
+%----------------------------------------------------------------------------------------
+
+% Renders a progress-bar to indicate a certain skill in percent.
+% param 1: name of the skill / tech / etc.
+% param 2: level (for example in years)
+% param 3: percent, values range from 0 to 1
+\newcommand{\cvskill}[3] {
+	\begin{tabular*}{1\mpwidth}{p{0.72\mpwidth}  r}
+ 		\textcolor{black}{\textbf{#1}} & \textcolor{maincol}{#2}\\
+	\end{tabular*}%
+	
+	\hspace{4pt}
+	\begin{tikzpicture}[scale=1,rounded corners=2pt,very thin]
+		\fill [lightcol] (0,0) rectangle (1\mpwidth, 0.15);
+		\fill [maincol] (0,0) rectangle (#3\mpwidth, 0.15);
+  	\end{tikzpicture}%
+}
+
+
+%----------------------------------------------------------------------------------------
+%	 CV EVENT
+%----------------------------------------------------------------------------------------
+
+% Renders a table and a paragraph (cvtext) wrapped in a parbox (to ensure minimum content
+% is glued together when a pagebreak appears).
+% Additional Information can be passed in text or list form (or other environments).
+% the work you did
+% param 1: time-frame i.e. Sep 14 - Jan 15 etc.
+% param 2:	 event name (job position etc.)
+% param 3: Customer, Employer, Industry
+% param 4: Short description
+% param 5: work done (optional)
+% param 6: technologies include (optional)
+% param 7: achievements (optional)
+\newcommand{\cvevent}[7] {
+	
+	% we wrap this part in a parbox, so title and description are not separated on a pagebreak
+	% if you need more control on page breaks, remove the parbox
+	\parbox{\mpwidth}{
+		\begin{tabular*}{1\mpwidth}{p{0.72\mpwidth}  r}
+	 		\textcolor{black}{\textbf{#2}} & \colorbox{maincol}{\makebox[0.25\mpwidth]{\textcolor{white}{#1}}} \\
+			\textcolor{maincol}{\textbf{#3}} & \\
+		\end{tabular*}\\[4pt]
+	
+		\ifthenelse{\isempty{#4}}{}{
+			\cvtext{#4}\\
+		}
+	}
+
+	\ifthenelse{\isempty{#5}}{}{
+		\vspace{4pt}
+		{#5}
+	}
+	\vspace{4pt}
+}
+
+%----------------------------------------------------------------------------------------
+%	 CV META EVENT
+%----------------------------------------------------------------------------------------
+
+% Renders a CV event on the sidebar
+% param 1: title
+% param 2: subtitle (optional)
+% param 3: customer, employer, etc,. (optional)
+% param 4: info text (optional)
+\newcommand{\cvmetaevent}[4] {
+	\textcolor{maincol} {\cvtext{\textbf{\begin{flushleft}#1\end{flushleft}}}}
+
+	\ifthenelse{\isempty{#2}}{}{
+	\textcolor{darkcol} {\cvtext{\textbf{#2}} }
+	}
+
+	\ifthenelse{\isempty{#3}}{}{
+		\cvtext{{ \textcolor{darkcol} {#3} }}\\
+	}
+
+	\cvtext{#4}\\[14pt]
+}
+
+%---------------------------------------------------------------------------------------
+%	QR CODE
+%----------------------------------------------------------------------------------------
+
+% Renders a qrcode image (centered, relative to the parentwidth)
+% param 1: percent width, from 0 to 1
+\newcommand{\cvqrcode}[1] {
+	\begin{center}
+		\includegraphics[width={#1}\mpwidth]{qrcode}
+	\end{center}
+}
+
+%=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+%,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                       % EDIT AFTER THIS POINT
+%''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+%=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+
+%============================================================================%
+%
+%
+%
+%	DOCUMENT CONTENT
+%
+%
+%
+%============================================================================%
+\begin{document}
+\columnratio{0.31}
+\setlength{\columnsep}{2.2em}
+\setlength{\columnseprule}{4pt}
+\colseprulecolor{lightcol}
+\begin{paracol}{2}
+\begin{leftcolumn}
+%---------------------------------------------------------------------------------------
+%	META IMAGE
+%----------------------------------------------------------------------------------------
+
+\cutpic{0cm}{\linewidth}{assets/images/profile_picture.jpeg}
+\vfill\null
+
+\cvsection{Kontakt}
+
+\icontext{Phone}{14}{+49 176 62509296}{black}\\[6pt]
+\iconemail{EnvelopeSquare}{14}{minh-tri.nguyen@gmx.net}{minh-tri.nguyen@gmx.net}{black}\\[6pt]
+\icontext{Xing}{14}{\href{https://www.xing.com/profile/MinhTri_Nguyen8/portfolio}{MinhTri$\_$Nguyen}}{black}\\[6pt]
+\icontext{MapMarker}{14}{{Vaihinger Str. 94a \\ 70567 Stuttgart}}{black}\\[6pt]
+\icontext{BirthdayCake}{14}{{10. Oktober 1986, Wertheim}}{black}\\[6pt]
+\vfill\null
+%\cvqrcode{0.7}
+
+%---------------------------------------------------------------------------------------
+%	META SKILLS
+%----------------------------------------------------------------------------------------
+\cvsection{Fähigkeiten}
+
+%\cvskill{Skill_Name} {Years of experience} {percentage of bar fill} \\[-2pt]
+
+\cvskill{Sparx EA, Rhapsody, SysML} {4+ Jahre} {0.7} \\[-2pt]
+
+\cvskill{DOORS Next Generation, Sphinx} {3+ Jahre} {0.7} \\[-2pt]
+
+\cvskill{Python, MATLAB Simulink} {5+ Jahre} {0.9} \\[-2pt]
+
+\cvskill{IPG CarMaker, MKS} {3+ Jahre} {0.7} \\[-2pt]
+
+\cvskill{Github, MS Azure} {2+ Jahr} {0.5} \\[-2pt]
+
+\cvskill{Scrum Master, SAFe} {2+ Jahr} {0.5} \\[-2pt]
+
+\cvskill{Sprachen: Dt., engl. } {} {} \\[-2pt]
+
+\cvskill{Führerscheinkl.: A, B} {} {} \\[-2pt]
+\vfill\null
+%\cvqrcode{0.7}
+
+%---------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+\cvsection{Engagement}
+
+\cvtext{DOSB-Trainer C Leistungssport Boxen}\\[6pt]
+\cvtext{DOSB-Trainer C Kraft und Fitness}\\[6pt]
+\cvtext{Schöffe Amtsgericht Stuttgart}\\[6pt]
+\vfill\null
+
+\end{leftcolumn}
+\begin{rightcolumn}
+
+%---------------------------------------------------------------------------------------
+%	TITLE  HEADER
+%----------------------------------------------------------------------------------------
+\fcolorbox{white}{maincol}{\begin{minipage}[c][3.5cm][c]{1\mpwidth}
+	\begin {center}
+		\HUGE{ \textbf{ \textcolor{white}{ \uppercase{ Minh-Tri Nguyen } } } } \\[-24pt]
+		\textcolor{white}{ \rule{0.1\textwidth}{1.25pt} } \\[4pt]
+		\large{ \textcolor{white} {System Engineer } }
+	\end {center}
+\end{minipage}} \\[14pt]
+\vspace{-12pt}
+
+%---------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vfill\null
+\cvsection{Berufliche Erfahrung}
+
+\cvevent
+	{\textbf{02/19 - heute}}
+	{Systemingenieur / Systemarchitekt - Entwicklung autonomer Fahrsysteme SAE L4}
+	{Robert Bosch GmbH}
+	{\begin{itemize}
+			\item Spezifikation des Fahrzeugverhaltens unter Berücksichtung der funktionalen Sicherheit nach ISO 26262 und Definition der Anforderungen nach IREB
+			\item Erstellung der funktionalen und logischen Architektur gemäß MBSE und Ableitung der SW-Anforderungen
+			\item Spezifikation logischer Testszenarien und Auswertung von Simulations- und Testergebnissen
+			\item Berechnung der notwendigen Sensorreichweiten zur Definition des Sensorsets
+			\item Planung und Durchführung agiler Arbeitsmethoden nach Scrum und SAFe 
+	\end{itemize}}
+\vfill\null
+
+\cvevent
+	{\textbf{02/13 – 01/19}}
+	{Wissenschaftlicher Mitarbeiter - Fahrzeugtechnik und Fahrdynamik}
+	{IVK - Universität Stuttgart}
+	{Planung, Durchführung und Auswertung realer sowie virtueller Fahrversuche im Stuttgarter Fahrsimulator des FKFS. Lehr- und Dozententätigkeiten am Institut}
+\vfill\null
+
+%---------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+%\vfill\null
+\cvsection{Bildungsweg}
+
+\cvevent
+	{\textbf{02/13 - 07/19}}
+	{Promotion, Note: \textbf{magna cum laude}}
+	{IVK - Universität Stuttgart}
+	{Dissertation: \href{https://www.springerprofessional.de/subjektive-wahrnehmung-und-bewertung-fahrbahninduzierter-gier-un/17938230}{Subjektive Wahrnehmung und Bewertung fahrbahninduzierter Gier- und Wankbewegungen im virtuellen Fahrversuch}}
+\vfill\null
+
+\cvevent
+	{\textbf{10/09 - 11/12}}
+	{Diplom - Fahrzeug- und Motorentechnik, Note: 2,2}
+	{TU Münchnen}
+	{Diplomarbeit - BMW AG: Einflussanalyse ausgewählter Fahrwerksparameter auf Übergangsfahreigenschaften und Aufbauschwingungskomfort, Note: 1,3}
+\vfill\null
+
+\cvevent
+	{\textbf{10/06 - 09/09}}
+	{Vordiplom - Fahrzeug- und Motorentechnik}
+	{Universität Stuttgart}
+	{Praktikum - Dr. Ing. h.c. F. Porsche AG: Entwicklung Gesamtfahrwerk}
+\vfill\null
+
+\cvevent
+	{\textbf{06/06}}
+	{Abitur, Note: 2,1}
+	{Technisches Gymnasium Wertheim}
+	{}
+\vfill\null
+
+
+%---------------------------------------------------------------------------------------
+%	PUBLICATION
+%----------------------------------------------------------------------------------------
+\vfill\null
+\cvsection{Veröffentlichungen}
+
+\cvevent
+	{\textbf{06/17}}
+	{\href{https://link.springer.com/chapter/10.1007/978-3-658-18459-9_19}{Subjective testing of a torque vectoring approach based on driving characteristics in the driving simulator}}
+	{Fridrich, A.; Nguyen, M.-T.; Janeba, A.; Krantz, W.; Neubeck, J.; Wiedemann, J. ATZ live chassis.tech plus, München, Juni 2017}
+	{}
+\vfill\null
+
+\cvevent
+	{\textbf{03/17}}
+	{\href{https://www.sae.org/publications/technical-papers/content/2017-01-1564/}{Subjective perception and evaluation of driving dynamics in the virtual test drive}}
+	{Nguyen, M.-T.; Pitz, J.; Krantz, W.; Neubeck; Wiedemann, J. SAE Int. J. Veh. Dyn., Stab., and NVH 1(2):247-252, 2017}
+	{}
+\vfill\null
+
+\cvevent
+	{\textbf{02/16}}
+	{\href{https://link.springer.com/article/10.1007/s38311-014-0024-3}{Simulation of driving under unsteady crosswind conditions}}
+	{Krantz, W.; Pitz, J.-O.; Stoll, D.; Nguyen, M.-T. ATZ Springer Vieweg, Februar 2016}
+	{}
+\vfill\null
+
+\cvevent
+	{\textbf{09/14}}
+	{\href{http://dsc2015.tuebingen.mpg.de/Docs/DSC_Proceedings/2014/DSC14_31_Pitz.pdf}{Combined motion of a hexapod with xy-table system for lateral movements}}
+	{Pitz, J.-O.; Nguyen, M.-T.; Baumann, G.; Reuss, H.-C. Driving Simulator Conference, Paris, September 2014}
+	{}
+\vfill\null
+
+%\cvevent
+%	{\textbf{20XX}}
+%	{Project Name}
+%	{Tool: Web Development}
+%	{A short description of your project.}
+%\vfill\null
+%---------------------------------------------------------------------------------------
+%	PERSONAL DETAILS
+%----------------------------------------------------------------------------------------
+%\vfill\null
+%\cvsection{EXTRACURRICULAR}
+%\vspace{-0.3cm}
+%\begin{itemize}
+%  \item Als Ausgleich zu meiner logischen Arbeit mache ich \textbf{Musik}.
+%  \item Ein weiteres Hobby von mir ist \textbf{Videos oder Fotos bearbeiten}.
+%\end{itemize}
+%\vfill\null
+
+
+% hotfixes to create fake-space to ensure the whole height is used
+\vfill
+\vfill
+\vfill
+\end{rightcolumn}
+\end{paracol}
+\end{document}
+
