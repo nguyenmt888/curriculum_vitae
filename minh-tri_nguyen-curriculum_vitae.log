@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2023.11.17)  18 NOV 2023 09:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2023.11.17)  20 NOV 2023 17:40
 entering extended mode
 **./minh-tri_nguyen-curriculum_vitae.tex
 (minh-tri_nguyen-curriculum_vitae.tex
@@ -1316,13 +1316,13 @@ LaTeX Info: Redefining \nameref on input line 360.
 \@outlinefile=\write5
 \openout5 = `minh-tri_nguyen-curriculum_vitae.out'.
 
-<assets/images/profile_picture.jpeg, id=6, 2168.1pt x 2890.8pt>
+<assets/images/profile_picture.jpeg, id=6, 451.6875pt x 602.25pt>
 File: assets/images/profile_picture.jpeg Graphic file (type jpg)
 <use assets/images/profile_picture.jpeg>
 Package pdftex.def Info: assets/images/profile_picture.jpeg  used on input line
  371. on input line 371.
-Package pdftex.def Info: Requested size: 160.76547pt x 214.33049pt on input lin
-e 371.
+Package pdftex.def Info: Requested size: 160.76547pt x 214.3562pt on input line
+ 371.
 
 Overfull \hbox (4.0pt too wide) in paragraph at lines 371--372
 [][] 
@@ -1802,7 +1802,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 554.
 Here is how much of TeX's memory you used:
  22362 strings out of 493314
  431689 string characters out of 3138860
- 553945 words of memory out of 3000000
+ 553947 words of memory out of 3000000
  25468 multiletter control sequences out of 15000+200000
  87369 words of font info for 29 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1815,8 +1815,8 @@ MiKTeX 2.9/fonts/type1/public/fontawesome/FontAwesome.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/impallari/raleway/Raleway-Bold.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/impallari/raleway/Raleway-Regular.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on minh-tri_nguyen-curriculum_vitae.pdf (2 pages, 4229505 bytes)
-.
+Output written on minh-tri_nguyen-curriculum_vitae.pdf (2 pages, 346250 bytes).
+
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)
