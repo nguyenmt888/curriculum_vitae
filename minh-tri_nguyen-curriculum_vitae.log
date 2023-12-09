@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2023.11.17)  29 NOV 2023 12:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2023.11.17)  9 DEC 2023 22:27
 entering extended mode
 **./minh-tri_nguyen-curriculum_vitae.tex
 (minh-tri_nguyen-curriculum_vitae.tex
@@ -1539,260 +1539,240 @@ Overfull \hbox (4.84172pt too wide) in alignment at lines 439--439
  []
 
 
-Overfull \hbox (4.84172pt too wide) in alignment at lines 441--441
-[] 
- []
-
-
-Overfull \hbox (4.84172pt too wide) in alignment at lines 442--442
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 449--449
-
- []
-
-
-Overfull \hbox (4.84172pt too wide) in alignment at lines 449--449
-[] 
- []
-
-
-Overfull \hbox (13.44533pt too wide) in alignment at lines 463--463
+Overfull \hbox (13.44533pt too wide) in alignment at lines 453--453
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--463
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 
  []
 
 LaTeX Font Info:    Try loading font information for OMS+Raleway-TLF on input l
-ine 463.
-LaTeX Font Info:    No file OMSRaleway-TLF.fd. on input line 463.
+ine 453.
+LaTeX Font Info:    No file OMSRaleway-TLF.fd. on input line 453.
 
 LaTeX Font Warning: Font shape `OMS/Raleway-TLF/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 463.
+(Font)              for symbol `textbullet' on input line 453.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--463
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []\T1/Raleway-TLF/m/n/10 Spezifikation lo-gi-scher Test-sze-na-ri-en und Aus-we
 r-tung von
  []
 
 
-Overfull \hbox (4.96175pt too wide) in alignment at lines 463--463
+Overfull \hbox (4.96175pt too wide) in alignment at lines 453--453
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--463
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 
  []
 
 
-Underfull \hbox (badness 3049) in paragraph at lines 475--475
+Underfull \hbox (badness 3049) in paragraph at lines 465--465
 []|[]\T1/Raleway-TLF/b/n/10 Wissenschaftlicher Mit-ar-bei-ter - Fahr-zeug-tech-
 nik
  []
 
 
-Overfull \hbox (13.44533pt too wide) in alignment at lines 475--475
+Overfull \hbox (13.44533pt too wide) in alignment at lines 465--465
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--475
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
 
  []
 
 
-Overfull \hbox (4.96175pt too wide) in alignment at lines 475--475
+Overfull \hbox (4.96175pt too wide) in alignment at lines 465--465
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--475
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--480
+Underfull \hbox (badness 10000) in paragraph at lines 470--470
 
  []
 
 
-Overfull \hbox (4.84172pt too wide) in alignment at lines 480--480
+Overfull \hbox (4.84172pt too wide) in alignment at lines 470--470
 [] 
  []
 
+
+Overfull \hbox (13.44533pt too wide) in alignment at lines 478--478
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 478--478
+
+ []
+
+
+Overfull \hbox (4.96175pt too wide) in alignment at lines 478--478
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 478--478
+
+ []
+
+
+Overfull \hbox (13.44533pt too wide) in alignment at lines 485--485
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 485--485
+
+ []
+
+
+Overfull \hbox (4.96175pt too wide) in alignment at lines 485--485
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 485--485
+
+ []
+
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 488.
+(babel)             in language  on input line 492.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 488.
+(babel)             in language  on input line 492.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 488.
+(babel)             in language  on input line 492.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 488.
+(babel)             in language  on input line 492.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 488.
+(babel)             in language  on input line 492.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 488.
+(babel)             in language  on input line 492.
 [1
 
 {C:/Users/ngi2abt/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./assets/
 images/profile_picture.jpeg>]
-Overfull \hbox (13.44533pt too wide) in alignment at lines 488--488
+Overfull \hbox (13.44533pt too wide) in alignment at lines 492--492
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--488
+Underfull \hbox (badness 10000) in paragraph at lines 492--492
 
  []
 
 
-Overfull \hbox (4.96175pt too wide) in alignment at lines 488--488
+Overfull \hbox (4.96175pt too wide) in alignment at lines 492--492
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--488
+Underfull \hbox (badness 10000) in paragraph at lines 492--492
 
  []
 
 
-Overfull \hbox (13.44533pt too wide) in alignment at lines 495--495
+Overfull \hbox (13.44533pt too wide) in alignment at lines 499--499
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--495
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
 
  []
 
 
-Overfull \hbox (4.96175pt too wide) in alignment at lines 495--495
+Underfull \hbox (badness 10000) in paragraph at lines 505--505
+
+ []
+
+
+Overfull \hbox (4.84172pt too wide) in alignment at lines 505--505
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--495
-
- []
-
-
-Overfull \hbox (13.44533pt too wide) in alignment at lines 502--502
+Overfull \hbox (13.44533pt too wide) in alignment at lines 513--513
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--502
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
 
  []
 
 
-Overfull \hbox (4.96175pt too wide) in alignment at lines 502--502
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 502--502
-
- []
-
-
-Overfull \hbox (13.44533pt too wide) in alignment at lines 509--509
+Overfull \hbox (13.44533pt too wide) in alignment at lines 520--520
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 509--509
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--515
-
- []
-
-
-Overfull \hbox (4.84172pt too wide) in alignment at lines 515--515
-[] 
- []
-
-
-Overfull \hbox (13.44533pt too wide) in alignment at lines 523--523
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 523--523
-
- []
-
-
-Overfull \hbox (13.44533pt too wide) in alignment at lines 530--530
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 530--530
-
- []
-
-
-Underfull \hbox (badness 3240) in paragraph at lines 537--537
+Underfull \hbox (badness 3240) in paragraph at lines 527--527
 []|[][]\T1/Raleway-TLF/b/n/10 Simulation of dri-ving un-der un-stea-dy crosswin
 d
  []
 
 
-Overfull \hbox (13.44533pt too wide) in alignment at lines 537--537
+Overfull \hbox (13.44533pt too wide) in alignment at lines 527--527
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 537--537
+Underfull \hbox (badness 10000) in paragraph at lines 527--527
 
  []
 
 
-Underfull \hbox (badness 7151) in paragraph at lines 544--544
+Underfull \hbox (badness 7151) in paragraph at lines 534--534
 []|[]\T1/Raleway-TLF/b/n/10 Driving Si-mu-la-tor Con-fe-rence, Pa-ris, Sep-tem-
 ber
  []
 
 
-Overfull \hbox (13.44533pt too wide) in alignment at lines 544--544
+Overfull \hbox (13.44533pt too wide) in alignment at lines 534--534
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 544--544
+Underfull \hbox (badness 10000) in paragraph at lines 534--534
 
  []
 
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 560.
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 570.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 570.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 560.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 560.
  (minh-tri_nguyen-curriculum_vitae.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 570.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 570.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 560.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 560.
 Package rerunfilecheck Info: File `minh-tri_nguyen-curriculum_vitae.out' has no
 t changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1800,12 +1780,12 @@ t changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 570.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 560.
  ) 
 Here is how much of TeX's memory you used:
  22362 strings out of 493314
  431689 string characters out of 3138860
- 551248 words of memory out of 3000000
+ 551671 words of memory out of 3000000
  25468 multiletter control sequences out of 15000+200000
  87369 words of font info for 29 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1818,7 +1798,7 @@ MiKTeX 2.9/fonts/type1/public/fontawesome/FontAwesome.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/impallari/raleway/Raleway-Bold.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/impallari/raleway/Raleway-Regular.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on minh-tri_nguyen-curriculum_vitae.pdf (2 pages, 346541 bytes).
+Output written on minh-tri_nguyen-curriculum_vitae.pdf (2 pages, 345929 bytes).
 
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
