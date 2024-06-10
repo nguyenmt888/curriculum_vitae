@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2024.3.12)  7 MAY 2024 14:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2024.3.12)  10 JUN 2024 11:03
 entering extended mode
 **./minh-tri_nguyen-curriculum_vitae.tex
 (minh-tri_nguyen-curriculum_vitae.tex
@@ -1534,26 +1534,6 @@ Overfull \hbox (0.79999pt too wide) in paragraph at lines 433--435
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--440
-
- []
-
-
-Overfull \hbox (4.84172pt too wide) in alignment at lines 440--440
-[] 
- []
-
-
-Overfull \hbox (4.84172pt too wide) in alignment at lines 442--442
-[] 
- []
-
-
-Overfull \hbox (4.84172pt too wide) in alignment at lines 443--443
-[] 
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 450--450
 
  []
@@ -1633,22 +1613,7 @@ Overfull \hbox (4.84172pt too wide) in alignment at lines 481--481
 [] 
  []
 
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 489.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 489.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 489.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 489.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 489.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 489.
-[1
 
-{C:/Users/ngi2abt/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./assets/
-images/profile_picture.jpeg>]
 Overfull \hbox (13.44533pt too wide) in alignment at lines 489--489
 [][] 
  []
@@ -1688,7 +1653,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 496--496
 
  []
 
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 503.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 503.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 503.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 503.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 503.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 503.
+[1
 
+{C:/Users/ngi2abt/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./assets/
+images/profile_picture.jpeg>]
 Overfull \hbox (13.44533pt too wide) in alignment at lines 503--503
 [][] 
  []
@@ -1810,7 +1790,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 571.
 Here is how much of TeX's memory you used:
  22362 strings out of 493314
  431689 string characters out of 3138861
- 552457 words of memory out of 3000000
+ 551880 words of memory out of 3000000
  25468 multiletter control sequences out of 15000+200000
  87369 words of font info for 29 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1823,7 +1803,7 @@ MiKTeX 2.9/fonts/type1/public/fontawesome/FontAwesome.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/impallari/raleway/Raleway-Bold.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/impallari/raleway/Raleway-Regular.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on minh-tri_nguyen-curriculum_vitae.pdf (2 pages, 347180 bytes).
+Output written on minh-tri_nguyen-curriculum_vitae.pdf (2 pages, 346572 bytes).
 
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
